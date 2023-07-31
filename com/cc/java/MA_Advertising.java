@@ -9,7 +9,7 @@ public class MA_Advertising extends Mitarbeiter {
     }
 
     public void createAdCampaign() {
-        output("Ad campaign created successfully! by " + getFirstName() + ".");
+        output("Ad campaign created successfully by " + getFirstName() + ".");
     }
 
 }

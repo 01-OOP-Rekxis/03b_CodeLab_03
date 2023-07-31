@@ -10,5 +10,5 @@ public class MA_Accounting extends Mitarbeiter {
 
     public void calculateTaxReturns() {
         output("Tax returns calculated by " + getFirstName() + ".");
-    } 
+    }
 }
