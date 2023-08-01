@@ -20,8 +20,7 @@ public class App {
 
     private static void getInfos(Mitarbeiter worker) {
         output("------------------------------");
-        output("Name: " + worker.getFirstName() + " " + worker.getFamilyName());
-        output("Birth year: " + worker.getBirthYear());
+        output(worker.getPersonalData());
         output(worker.getEmployedTime());
         output(worker.hasLunch());
         output(worker.startsWork());

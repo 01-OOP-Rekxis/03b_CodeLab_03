@@ -28,4 +28,12 @@ public class Person {
         return birthYear;
     }
 
+    public String getPersonalData() {
+        return "Name: " + firstName + " " + familyName + "\nGeburtsjahr: " + birthYear;
+    }
+
+    
+
+    
+
 }
