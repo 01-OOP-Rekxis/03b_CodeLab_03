@@ -40,12 +40,12 @@ public class Mitarbeiter {
     }
 
     protected void hasLunch() {
-        output("Hi, I'm " + getFirstName() +
+        output("Hi, I'm " + this.firstName +
                 " and I'm having Lunch!");
     }
 
     protected void startsWork() {
-        output("Hi, I'm " + getFirstName() +
+        output("Hi, I'm " + this.firstName +
                 " and I'm starting my work at the " +
                 this.department + " department!");
     }
@@ -55,14 +55,14 @@ public class Mitarbeiter {
         int employedTime = (currentYear - this.hiredYear);
 
         String preStr = "Hi, I'm ";
-        String midStr = " and I've been working here since ";
+        String midStr = " and I've been working here for ";
 
         if (employedTime == 1) {
-            return preStr + getFirstName() + midStr + "a year.";
+            return preStr + this.firstName + midStr + "a year.";
         } else if (employedTime == 0) {
-            return preStr + getFirstName() + " and I'm new here.";
+            return preStr + this.firstName + " and I'm new here.";
         } else {
-            return preStr + getFirstName() + midStr + employedTime + " years.";
+            return preStr + this.firstName + midStr + employedTime + " years.";
         }
     }
 
