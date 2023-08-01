@@ -8,8 +8,9 @@ public class MA_Advertising extends Mitarbeiter {
 
     }
 
-    public void createAdCampaign() {
-        output("Ad campaign created successfully by " + getFirstName() + ".");
+    @Override
+    protected String doYourJob() {
+        return "Ad campaign created successfully by " + getFirstName() + ".";
     }
 
 }

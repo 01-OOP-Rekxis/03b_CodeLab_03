@@ -8,8 +8,9 @@ public class MA_Production extends Mitarbeiter {
 
     }
 
-    public void assembleProducts() {
-        output(getFirstName() + " assembled the products.");
+    @Override
+    protected String doYourJob() {
+        return getFirstName() + " assembled the products.";
     }
 
 }
